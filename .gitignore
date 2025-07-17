@@ -1,0 +1,50 @@
+# Binaries for Go programs
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output of go build / install / test
+/build/
+bin/
+*.out
+
+# Coverage and test reports
+*.cover
+*.coverage
+coverage.*
+
+# Logs
+*.log
+
+# Dependency directories
+vendor/
+
+# IDE/editor config files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment and config files
+.env
+.env.local
+.env.*.local
+
+# Node modules (in case you use Swagger UI via npm or serve a frontend)
+node_modules/
+
+# Git directory ignores
+.git/
+
+# Misc
+*.swp
+*.bak
+*.tmp
+*.orig

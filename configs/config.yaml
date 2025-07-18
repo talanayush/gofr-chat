@@ -1,0 +1,8 @@
+# configs/config.yaml
+server:
+  port: ":8080"
+db:
+  driver: "postgres"
+  dsn: "host=localhost port=5432 user=foo password=bar dbname=gofr_chat sslmode=disable"
+jwt:
+  secret: "replace-with-secure-secret"

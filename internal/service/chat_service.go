@@ -1,15 +1,15 @@
 package service
 
 type ChatService interface {
-    DummyLogic() string
+	DummyLogic() string
 }
 
 type chatServiceImpl struct{}
 
 func NewChatService() ChatService {
-    return &chatServiceImpl{}
+	return &chatServiceImpl{}
 }
 
 func (c *chatServiceImpl) DummyLogic() string {
-    return "Service Layer Logic"
+	return "Service Layer Logic"
 }

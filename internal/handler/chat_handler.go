@@ -1,7 +1,7 @@
 package handler
 
 import (
-    "net/http"
+	"net/http"
 )
 
 // @Summary Health check
@@ -10,6 +10,6 @@ import (
 // @Success 200
 // @Router /health [get]
 func HealthCheck(w http.ResponseWriter, r *http.Request) {
-    w.WriteHeader(http.StatusOK)
-    w.Write([]byte("OK"))
+	w.WriteHeader(http.StatusOK)
+	w.Write([]byte("OK"))
 }

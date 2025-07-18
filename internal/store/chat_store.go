@@ -1,16 +1,16 @@
 package store
 
 type ChatStore interface {
-    SaveMessage(msg string) error
+	SaveMessage(msg string) error
 }
 
 type chatStoreImpl struct{}
 
 func NewChatStore() ChatStore {
-    return &chatStoreImpl{}
+	return &chatStoreImpl{}
 }
 
 func (cs *chatStoreImpl) SaveMessage(msg string) error {
-    // Dummy store method
-    return nil
+	// Dummy store method
+	return nil
 }

@@ -1,6 +1,7 @@
 package handler
 
 import (
+	"log"
 	"net/http"
 )
 
@@ -11,5 +12,7 @@ import (
 // @Router /health [get]
 func HealthCheck(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("OK"))
+	if _, err := w.Write([]byte("OK")); err != nil {
+		log.Println("failed to write response:", err)
+	}
 }

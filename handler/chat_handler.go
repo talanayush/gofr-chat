@@ -1,7 +1,7 @@
 package handler
 
 import (
-    "gofr.dev/pkg/gofr"
+	"gofr.dev/pkg/gofr"
 )
 
 // @Summary Health check
@@ -10,5 +10,5 @@ import (
 // @Success 200
 // @Router /health [get]
 func HealthCheck(ctx *gofr.Context) (interface{}, error) {
-    return "OK", nil
+	return "OK", nil
 }

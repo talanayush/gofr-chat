@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/talanayush/gofr-chat/handler" // your health‐check (and other) handlers
-	"gofr.dev/pkg/gofr"                                // the GoFr framework
+	"gofr.dev/pkg/gofr"                       // the GoFr framework
 )
 
 func main() {

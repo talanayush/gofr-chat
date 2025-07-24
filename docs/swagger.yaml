@@ -1,0 +1,13 @@
+info:
+  contact: {}
+paths:
+  /health:
+    get:
+      description: Returns OK if server is running
+      responses:
+        "200":
+          description: OK
+      summary: Health check
+      tags:
+      - Health
+swagger: "2.0"
